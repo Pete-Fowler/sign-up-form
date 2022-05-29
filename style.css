@@ -1,11 +1,11 @@
 @font-face {
     font-family: londrina;
-    src: url(./LondrinaOutline-Regular.ttf);
+    src: url(./assets/LondrinaOutline-Regular.ttf);
 }
 
 @font-face {
     font-family: roboto;
-    src: url(./Roboto-Regular.ttf);
+    src: url(./assets/Roboto-Regular.ttf);
 }
 
 :root {
@@ -23,9 +23,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./pexels-simon-berger-1323550.jpg");
+    background-image: url("./assets/pexels-simon-berger-1323550.jpg");
     background-size: cover;
-    width: 500px;
+    width: 40vw;
     
 }
 
@@ -47,13 +47,12 @@ body {
 #content {
     display: flex;
     flex-direction: column;
-   
-    width: 800px;
-    min-width: 600px;
+    
+    width: 60vw;
 }
 
 #description, #form-box, #signup {
-    height: 250px;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -78,17 +77,22 @@ body {
 }
 
 #form {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     padding-top: 20px;
-    width: 90%;
+    width: 100%;
 }
 
+label {
+    width: 40%;
+}
 input {
     height: 1.2rem;
-    width: 15rem;
+    width: 100%;
     border: 1px solid grey;
     border-radius: 5px;
     display: block;
@@ -110,10 +114,9 @@ input:invalid {
 
 label {
     font-size: .8rem;
-    display: block;
 }
 
-#message {
+#message, #phone-msg {
     font-size: .8rem;
     color: red;
     position: absolute;
@@ -124,8 +127,8 @@ button {
     background-color: rgb(97, 136, 255);
     font-size: 1.2rem;
     font-weight: 700;
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 175px;
     border-radius: 10px;
     border: 2px solid grey;
     box-shadow: 1px 1px 2px 1px grey;

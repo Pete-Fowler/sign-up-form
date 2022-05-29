@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Signup Form</title>
 </head>
@@ -32,7 +32,8 @@
                     <input type="email" id="email" name="email">
                 </label>
                 <label for="phone">PHONE
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="123-456-7890">
+                    <div id="phone-msg"></div>
                 </label>
                 <label for="password">PASSWORD
                     <input type="password" id="password" name="password">
